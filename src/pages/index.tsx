@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import { useState } from 'react';
+import Header from '../components/header/Header';
+import Navbar from '../components/navbar/Navbar';
+import Products from '../components/products';
 
 export default function Home() {
   return (
@@ -10,6 +13,9 @@ export default function Home() {
       </Head>
 
       <main >
+      <Navbar />
+      <Header/>
+      <Products/>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
         <div className="flex flex-col mb-16 sm:text-center">
